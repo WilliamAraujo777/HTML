@@ -1,2 +1,2 @@
 # HTML
-Projetos básicos de HTML
+Projetos básicos de HTML do curso PROA
