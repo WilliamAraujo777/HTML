@@ -62,9 +62,21 @@
     display: block;
 }
 
-.barra-lateral-esquerda li:hover {
+ .barra-lateral-esquerda #menuLeonardo:hover {
     background-color: #0099cc;
-}
+} 
+.barra-lateral-esquerda #menuDonattelo:hover {
+    background-color: #a15ad4;
+} 
+.barra-lateral-esquerda #menuRaph:hover {
+    background-color: #d7131d;
+} 
+.barra-lateral-esquerda #menuMikey:hover {
+    background-color: #c7832e;
+} 
+
+
+
 
 .barra-lateral-direita h2{
     color: #336699;
@@ -76,6 +88,52 @@
     padding:1%;
     color: #FFF;
 }
+
+
+/*Donattelo*/
+.donatello .cabecalho{
+    background-color:#a15ad4;
+}
+
+.donatello .barra-lateral-direita h2{
+    color:#a15ad4;
+}
+
+.donatello .rodape{
+    background-color:#a15ad4;
+}
+
+/*Raphael*/
+.raphael .cabecalho{
+    background-color:#d7131d;
+}
+
+.raphael .barra-lateral-direita h2{
+    color:#d7131d;
+}
+
+.raphael .rodape{
+    background-color:#d7131d;
+}
+
+/*Michelangelo*/
+.michelangelo .cabecalho{
+    background-color:#c7832e;
+}
+
+.michelangelo .barra-lateral-direita h2{
+    color:#c7832e;
+}
+
+.michelangelo .rodape{
+    background-color:#c7832e;
+}
+
+
+
+
+
+
 
 
 /* Desse ponto em diante estamos falando em responsive*/
