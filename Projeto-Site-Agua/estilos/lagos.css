@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.conteudo{
+	/* border:4px solid rgb(9, 211, 230);  */
+	margin: 14px 100px 14px 100px;
+	Background-color:rgb(255,255,255);
+	padding: 25px;
+
+}
+
+h1{
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 100px;	
+
+}	
+
+p{
+	text-align: justify;
+	margin: 30px;
+}
+
+body{
+	font-family: 'Itim', cursive;
+
+}
+
+li a{
+	text-decoration: none;
+	font-weight: 600;
+	padding: 25px;
+	font-size: 25px;
+	color:rgb(1, 179, 192);
+}
+
+li a:last-child{
+	padding-right: 0px;
+}
+
+li a:hover{
+	color:rgb(5, 44, 216);
+	transition: 1s;
+}
+li{
+	list-style: none;
+	display: inline;
+	position: relative;
+}
+
+nav{
+	position: relative;
+	width: 50%;
+	height: 100px;
+	float: right;
+	padding: 50px 0px 50px 300px;
+	
+}
+ul{
+	position: relative;
+	
+}
+
+header{
+	background-image: url(../imagens/sea.svg);	
+	background-color: white;
+	height: 200px;
+}
+
+header img{
+	height:100px;
+	margin:10px;
+}
+
+h2{
+	margin-right: 30px;
+	text-align: center;
+}
+
+p{
+	font-size: 22px;
+	margin-bottom: 200px;
+}
+
+.conteudo img{
+	max-width: 35vw;
+	margin-right: 40px;
+}
+
+footer{
+	background-color:rgb(9, 211, 230); 	
+	height: 45px;
+}
+
+#tabela{
+	width: 100%;
+	margin-bottom: 70px;
+	text-align: center;
+	text-decoration: none;
+	border-collapse: collapse;
+}
+
+td{
+	border:3px solid black;
+}
+
+th{
+	border:3px solid black;
+	padding: 10px;
+}
+
+.botao{
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	font-size: 17px;
+	cursor: pointer;
+	padding: 10px;
+	font-family: 'Itim', cursive;
+	background-color: white;
+	border: none;
+}
+
+.botao:hover{
+	background-color:rgb(9, 211, 230); 	
+	color: white;
+
+
+}
