@@ -6,10 +6,11 @@
 }
 
 .cabecalho {
-    background-color: #336699;
+    background-color: black;
     color: #ffffff;
     padding: 15px;
     height:12vh;
+    
 }
 
 
@@ -50,7 +51,7 @@
 .barra-lateral-esquerda li {
     padding: 8px;
     margin-bottom: 7px;
-    background-color: #336699;
+    background-color: green;
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -62,6 +63,9 @@
     display: block;
 }
 
+.barra-lateral-esquerda #menuInicio:hover {
+    background-color: green;
+} 
  .barra-lateral-esquerda #menuLeonardo:hover {
     background-color: #0099cc;
 } 
@@ -79,18 +83,37 @@
 
 
 .barra-lateral-direita h2{
-    color: #336699;
+    color: green;
     margin: 10px 0;
 }
 
 .rodape {
-    background:#336699;
+    background:green;
     padding:1%;
     color: #FFF;
 }
 
+/*Leonardo*/
+.leonardo .barra-lateral-esquerda li{
+    background-color:#336699;
+}
 
+.leonardo .cabecalho{
+    background-color:#336699;
+}
+
+.leonardo .barra-lateral-direita h2{
+    color:#336699;
+}
+
+.leonardo .rodape{
+    background-color:#336699;
+}
 /*Donattelo*/
+.donatello .barra-lateral-esquerda li{
+    background-color:#a15ad4;
+}
+
 .donatello .cabecalho{
     background-color:#a15ad4;
 }
@@ -104,6 +127,11 @@
 }
 
 /*Raphael*/
+
+.raphael .barra-lateral-esquerda li{
+    background-color:#d7131d;
+}
+
 .raphael .cabecalho{
     background-color:#d7131d;
 }
@@ -117,6 +145,11 @@
 }
 
 /*Michelangelo*/
+
+.michelangelo .barra-lateral-esquerda li{
+    background-color:#c7832e;
+}
+
 .michelangelo .cabecalho{
     background-color:#c7832e;
 }
