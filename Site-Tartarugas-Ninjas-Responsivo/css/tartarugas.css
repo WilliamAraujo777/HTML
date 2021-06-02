@@ -144,6 +144,11 @@
         padding:2%;
     }
 
+    .perfil{
+        display: block;
+        
+    }
+
     .artigo{
         padding:2%;
         width:100%;
