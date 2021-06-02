@@ -6,7 +6,7 @@
 }
 
 .cabecalho {
-    background-color: black;
+    background-color: green;
     color: #ffffff;
     padding: 15px;
     height:12vh;
@@ -79,8 +79,10 @@
     background-color: #c7832e;
 } 
 
+.barra-lateral-direita img{
 
-
+    width: 100%;
+}
 
 .barra-lateral-direita h2{
     color: green;
@@ -161,13 +163,6 @@
 .michelangelo .rodape{
     background-color:#c7832e;
 }
-
-
-
-
-
-
-
 
 /* Desse ponto em diante estamos falando em responsive*/
 @media screen and (max-width: 768px) {
