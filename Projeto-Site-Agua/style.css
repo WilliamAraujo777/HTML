@@ -7,11 +7,10 @@
 	box-sizing: border-box;
 }
 
-.conteudo{
-	border:px dashed rgb(9, 211, 230); 
+.conteudo{ 
 	margin: 0px 100px 100px 100px;
 	Background-color:rgb(255,255,255);
-	height:600px;
+	height:100vh;
 }
 
 h1{
@@ -19,6 +18,12 @@ text-align: center;
 padding-top: 30px;	
 
 }	
+
+footer{
+	background-color:rgb(9, 211, 230);
+	font-size: 2vw; 	
+	height: 45px;
+}
 
 p{
 	text-align: justify;
@@ -30,7 +35,7 @@ body{
 	/* background-color:rgb(1, 179, 192);; */
 }
 
-li a{
+header li a{
 	text-decoration: none;
 	font-weight: 600;
 	padding: 25px;
@@ -38,15 +43,15 @@ li a{
 	color:rgb(1, 179, 192);
 }
 
-li a:last-child{
+header li a:last-child{
 	padding-right: 0px;
 }
 
-li a:hover{
+header li a:hover{
 	color:rgb(5, 44, 216);
 	transition: 1s;
 }
-li{
+header li{
 	list-style: none;
 	display: inline;
 	position: relative;
@@ -74,6 +79,9 @@ header{
 header img{
 	height:100px;
 	margin:10px;
+}
+.conteudo{
+	align-items: center;
 }
 
 .conteudo img{

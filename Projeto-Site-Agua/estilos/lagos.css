@@ -99,7 +99,8 @@ p{
 }
 
 footer{
-	background-color:rgb(9, 211, 230); 	
+	background-color:rgb(9, 211, 230);
+	font-size: 2vw; 	
 	height: 45px;
 }
 

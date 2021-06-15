@@ -11,7 +11,7 @@
 	border:px dashed rgb(9, 211, 230); 
 	margin: 0px 100px 100px 100px;
 	Background-color:rgb(255,255,255);
-	height:600px;
+	height: 70vh;
 }
 
 h1{
@@ -30,7 +30,7 @@ body{
 	/* background-color:rgb(1, 179, 192);; */
 }
 
-li a{
+header li a{
 	text-decoration: none;
 	font-weight: 600;
 	padding: 25px;
@@ -38,15 +38,15 @@ li a{
 	color:rgb(1, 179, 192);
 }
 
-li a:last-child{
+header li a:last-child{
 	padding-right: 0px;
 }
 
-li a:hover{
+header li a:hover{
 	color:rgb(5, 44, 216);
 	transition: 1s;
 }
-li{
+header li{
 	list-style: none;
 	display: inline;
 	position: relative;
@@ -76,8 +76,16 @@ header img{
 	margin:10px;
 }
 
+
+
 .conteudo img{
 	width: 300px;
 	height: 200px;
 	margin-left:30px;	
+}
+
+footer{
+	background-color:rgb(9, 211, 230);
+	font-size: 2vw; 	
+	height: 45px;
 }

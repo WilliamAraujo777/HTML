@@ -77,7 +77,7 @@ public class Cinema {
 							+ "\nPREFERENCIAIS: 14 15 16 17 18 19 20 21 22 23 24 25");
 					lugarEscolhido = fileiraEscolhida + sc.nextLine();
 				}
-				
+
 			} else {
 				System.out.println("Qual fileira irá querer?" + "\nE " + "\nD" + "\nC" + "\nB"
 						+ "\nA - ASSENTOS PREFERENCIAIS" + "\nTELAO");
@@ -98,7 +98,6 @@ public class Cinema {
 			}
 
 			if (cont != 0) {
-
 				if (!lugares.contains(lugarEscolhido)) {
 					lugares.add(cont, lugarEscolhido);
 				} else {
