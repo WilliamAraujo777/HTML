@@ -2,7 +2,7 @@
 // import javax.swing.JOptionPane; 
 import java.util.*;
 
-public class Cinema{
+public class Cinema {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -11,16 +11,17 @@ public class Cinema{
 		int sala = 0;
 		int escolha = 0;
 		int qtdLugares = 0;
+		int escolhaQTD = 0;
 		String lugarEscolhido = "";
-		//int fileiras[] = new int[6];
-		//String lugares[] = new String[25];
+		// int fileiras[] = new int[6];
+		// String lugares[] = new String[25];
 
 		System.out.println("Olá! Seja bem vindo(a) a bilheteria!\nPor favor, insira seu nome: ");
 		String nome = sc.nextLine();
 
 		while (escolha == 0) {
 			System.out.println("Atualmente, estamos com duas salas de cinema ativas, qual deseja?"
-					+ "\nSala Alpha = As Branquelas" + "\nSala Beta  = A chegada");
+					+ "\n1 para Sala Alpha = As Branquelas" + "\n2 para Sala Beta  = A chegada");
 			sala = sc.nextInt();
 
 			if (sala == 1 || sala == 2) {
@@ -30,56 +31,88 @@ public class Cinema{
 			}
 		}
 
-		if (sala == 1) {
-			System.out.println(
-					"Você Selecionou a sala Alpha com o filme: As Branquelas! Que contem 140 lugares disponiveis!" 
-					+ "\nQuantos lugares vai querer?");
-					qtdLugares = sc.nextInt();
-					if(qtdLugares > 0 && qtdLugares <= 140){
+		while (escolhaQTD == 0) {
+			if (sala == 1) {
+				System.out.println(
+						"Você Selecionou a sala Alpha com o filme: As Branquelas! Que contem 140 lugares disponiveis!"
+								+ "\nQuantos lugares vai querer?");
+				qtdLugares = sc.nextInt();
+				if (qtdLugares > 0 && qtdLugares <= 140) {
+					escolhaQTD += 1;
+				} else {
+					System.out.println("Por favor, selecione no máximo 140 bilhetes!");
+				}
 
-					}else{
-						System.out.println("Por favor, selecione no máximo 140 bilhetes!");
-					}
-			
-		} else if (sala == 2) {
-			System.out.println("Você Selecionou a sala Beta com o filme: A chegada!" + "\nQuantos lugares vai querer?");
-			qtdLugares = sc.nextInt();
+			} else if (sala == 2) {
+				System.out.println(
+						"Você Selecionou a sala Beta com o filme: A chegada! Que contem 120 lugares disponiveis!"
+								+ "\nQuantos lugares vai querer?");
+				qtdLugares = sc.nextInt();
+				if (qtdLugares > 0 && qtdLugares <= 120) {
+					escolhaQTD += 1;
+				} else {
+					System.out.println("Por favor, selecione no máximo 120 bilhetes!");
+				}
+			}
 		}
-		
+
 		for (int cont = 0; cont < qtdLugares; cont++) {
-			System.out.println("Qual fileira irá querer?" + "\n6 " + "\n5 " + "\n4" + "\n3" + "\n2"
-					+ "\n1 - ASSENTOS PREFERENCIAIS" + "\nTELAO");
 
-			int fileiraEscolhida = sc.nextInt();
- 			System.out.println("teste");
-			sc.nextLine();
-	
+			if (sala == 1) {
 
-			if (fileiraEscolhida != 1) {
-				System.out.println("Agora escolha um assento: " + "\nA B C D E F G H I J K L M N O P Q R S T U V W ");
-				lugarEscolhido = fileiraEscolhida + sc.nextLine();
+				System.out.println("Qual fileira irá querer?" + "\nF " + "\nE " + "\nD" + "\nC" + "\nB"
+						+ "\nA - ASSENTOS PREFERENCIAIS" + "\nTELAO");
 
+				String fileiraEscolhida = sc.nextLine();
+				
+				sc.nextLine();
+
+				if (fileiraEscolhida != "A" || fileiraEscolhida != "a") {
+					System.out.println("Agora escolha um assento: "
+							+ "\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ");
+					lugarEscolhido = fileiraEscolhida + sc.nextLine();
+
+				} else {
+					System.out.println("Agora escolha um assento: " + "\n1 2 3 4 5 6 7 8 9 10 11 12 13"
+							+ "\nPREFERENCIAIS: 14 15 16 17 18 19 20 21 22 23 24 25");
+					lugarEscolhido = fileiraEscolhida + sc.nextLine();
+				}
+				
 			} else {
-				System.out.println("Agora escolha um assento: " + "\nA B C D E F G H I J K L M"
-						+ "\nPREFERENCIAIS: N O P Q R S T U V W Y Z");
-				 lugarEscolhido = fileiraEscolhida + sc.nextLine();
+				System.out.println("Qual fileira irá querer?" + "\nE " + "\nD" + "\nC" + "\nB"
+						+ "\nA - ASSENTOS PREFERENCIAIS" + "\nTELAO");
+
+				String fileiraEscolhida = sc.nextLine();
+				sc.nextLine();
+
+				if (fileiraEscolhida != "A" || fileiraEscolhida != "a") {
+					System.out.println("Agora escolha um assento: "
+							+ "\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24");
+					lugarEscolhido = fileiraEscolhida + sc.nextLine();
+
+				} else {
+					System.out.println("Agora escolha um assento: " + "\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18"
+							+ "\nPREFERENCIAIS: 19 20 21 22 23 24 ");
+					lugarEscolhido = fileiraEscolhida + sc.nextLine();
+				}
 			}
 
-			if(cont != 0){
-				
-				if(!lugares.contains(lugarEscolhido)){
+			if (cont != 0) {
+
+				if (!lugares.contains(lugarEscolhido)) {
 					lugares.add(cont, lugarEscolhido);
-				}else{
+				} else {
 					System.out.println("Opa! Parece que este lugar ja foi selecionado! Por favor, escolha outro");
 					cont -= 1;
 				}
-			}else{
+			} else {
 				lugares.add(cont, lugarEscolhido);
 			}
 		}
 
-		System.out.println(nome + " seus ingressos foram comprados com sucesso. Aproveite a pipoca grátis e tenha um bom filme.");
-
+		System.out.println(
+				nome + "o seus ingressos foram comprados com sucesso. Aproveite a pipoca grátis e tenha um bom filme.");
+		sc.close();
 
 	}
 
