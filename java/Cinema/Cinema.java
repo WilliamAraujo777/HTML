@@ -1,5 +1,3 @@
-
-// import javax.swing.JOptionPane; 
 import java.util.*;
 
 public class Cinema {
@@ -13,8 +11,6 @@ public class Cinema {
 		int qtdLugares = 0;
 		int escolhaQTD = 0;
 		String lugarEscolhido = "";
-		// int fileiras[] = new int[6];
-		// String lugares[] = new String[25];
 
 		System.out.println("Olá! Seja bem vindo(a) a bilheteria!\nPor favor, insira seu nome: ");
 		String nome = sc.nextLine();
@@ -64,7 +60,7 @@ public class Cinema {
 						+ "\nA - ASSENTOS PREFERENCIAIS" + "\nTELAO");
 
 				String fileiraEscolhida = sc.nextLine();
-				
+				System.out.println("test");
 				sc.nextLine();
 
 				if (fileiraEscolhida != "A" || fileiraEscolhida != "a") {
@@ -83,6 +79,7 @@ public class Cinema {
 						+ "\nA - ASSENTOS PREFERENCIAIS" + "\nTELAO");
 
 				String fileiraEscolhida = sc.nextLine();
+				System.out.println("test");
 				sc.nextLine();
 
 				if (fileiraEscolhida != "A" || fileiraEscolhida != "a") {
