@@ -1,20 +1,18 @@
+
 import java.util.*;
 
 public class Cinema {
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		ArrayList<String> lugares = new ArrayList<String>();
-
 		int sala = 0;
 		int escolha = 0;
 		int qtdLugares = 0;
 		int escolhaQTD = 0;
 		String lugarEscolhido = "";
-
 		System.out.println("Olá! Seja bem vindo(a) a bilheteria!\nPor favor, insira seu nome: ");
 		String nome = sc.nextLine();
-
+		
 		while (escolha == 0) {
 			System.out.println("Atualmente, estamos com duas salas de cinema ativas, qual deseja?"
 					+ "\n1 para Sala Alpha = As Branquelas" + "\n2 para Sala Beta  = A chegada");
@@ -55,15 +53,13 @@ public class Cinema {
 		for (int cont = 0; cont < qtdLugares; cont++) {
 
 			if (sala == 1) {
-
 				System.out.println("Qual fileira irá querer?" + "\nF " + "\nE " + "\nD" + "\nC" + "\nB"
 						+ "\nA - ASSENTOS PREFERENCIAIS" + "\nTELAO");
-
-				String fileiraEscolhida = sc.nextLine();
-				System.out.println("test");
+				char fileiraEscolhida = sc.next().charAt(0);
 				sc.nextLine();
+				fileiraEscolhida = Character.toLowerCase(fileiraEscolhida);
 
-				if (fileiraEscolhida != "A" || fileiraEscolhida != "a") {
+				if (fileiraEscolhida != 'a') {
 					System.out.println("Agora escolha um assento: "
 							+ "\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ");
 					lugarEscolhido = fileiraEscolhida + sc.nextLine();
@@ -74,20 +70,22 @@ public class Cinema {
 					lugarEscolhido = fileiraEscolhida + sc.nextLine();
 				}
 
-			} else {
+		
+			} else if (sala == 2){
+
 				System.out.println("Qual fileira irá querer?" + "\nE " + "\nD" + "\nC" + "\nB"
 						+ "\nA - ASSENTOS PREFERENCIAIS" + "\nTELAO");
+				char fileiraEscolhida = sc.next().charAt(0);
+				fileiraEscolhida = Character.toLowerCase(fileiraEscolhida);
 
-				String fileiraEscolhida = sc.nextLine();
-				System.out.println("test");
-				sc.nextLine();
-
-				if (fileiraEscolhida != "A" || fileiraEscolhida != "a") {
+				if (fileiraEscolhida != 'a') {
+					sc.nextLine();
 					System.out.println("Agora escolha um assento: "
 							+ "\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24");
 					lugarEscolhido = fileiraEscolhida + sc.nextLine();
 
 				} else {
+					sc.nextLine();
 					System.out.println("Agora escolha um assento: " + "\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18"
 							+ "\nPREFERENCIAIS: 19 20 21 22 23 24 ");
 					lugarEscolhido = fileiraEscolhida + sc.nextLine();
@@ -105,9 +103,8 @@ public class Cinema {
 				lugares.add(cont, lugarEscolhido);
 			}
 		}
-
 		System.out.println(
-				nome + "o seus ingressos foram comprados com sucesso. Aproveite a pipoca grátis e tenha um bom filme.");
+				nome + " seus ingressos foram comprados com sucesso. Aproveite a pipoca grátis e tenha um bom filme.");
 		sc.close();
 
 	}
